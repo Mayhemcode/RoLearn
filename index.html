@@ -1,0 +1,112 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Innovation Hub</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>RoLearn</h1>
+        <p>Explore Ideas, Create Projects, Innovate!</p>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#projects">Projects</a>
+            <a href="#team">Team</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section id="home">
+        <h2>Welcome to RoLearn</h2>
+        <p>
+            A platform where students showcase their innovative
+            ideas, projects and creativity.
+        </p>
+    </section>
+
+    <section id="projects">
+        <h2>Our Projects</h2>
+
+        <button onclick="filterProjects('all')">All</button>
+        <button onclick="filterProjects('technology')">Technology</button>
+        <button onclick="filterProjects('environment')">Environment</button>
+        <button onclick="filterProjects('education')">Education</button>
+
+        <div class="project-container">
+
+            <div class="project-card technology">
+                <img src="smart home.png"
+                     alt="Smart Home Project">
+                <h3>Smart Home System</h3>
+                <p>A project to control home appliances using technology.</p>
+                <p>Category: Technology</p>
+            </div>
+
+            <div class="project-card environment">
+                <img src="eco.png"
+                     alt="Eco Friendly Project">
+                <h3>Eco-Friendly Campus</h3>
+                <p>A project promoting recycling and environmental awareness.</p>
+                <p>Category: Environment</p>
+            </div>
+
+            <div class="project-card education">
+                <img src="learning app.png"
+                     alt="Learning App Project">
+                <h3>Learning App</h3>
+                <p>An application that helps students learn new subjects.</p>
+                <p>Category: Education</p>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="team">
+        <h2>Our Team Members</h2>
+
+        <div class="team-container">
+
+            <div class="team-member">
+                <h3>Rohan</h3>
+                <p>Project Leader</p>
+            </div>
+
+            <div class="team-member">
+                <h3>Pratham</h3>
+                <p>Web Developer</p>
+            </div>
+
+            <div class="team-member">
+                <h3>Ameen</h3>
+                <p>UI/UX Designer</p>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+
+        <form onsubmit="sendMessage(event)">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+
+        <p id="message"></p>
+    </section>
+
+    <footer>
+        <p>Student Innovation Hub | College Project</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
